@@ -1,0 +1,14 @@
+function bernardTheLetterCounter () {
+  var sentence = prompt("Please write a sentence.");
+  var letter = prompt("Which letter want you to count?");
+  var letterCounter = 0;
+  for (i=0; i<=sentence.length; i++) {
+    if (sentence.charAt(i) == letter) {
+      letterCounter++;
+    }
+  };
+  alert("The letter " + letter + " occurs " + letterCounter + " times in this sentence.");
+  return;
+};
+
+bernardTheLetterCounter ();
